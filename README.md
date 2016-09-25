@@ -13,9 +13,7 @@ Copy the default files:
 ```
 mkdir /forwarder/config/rsyslog.d
 cd /forwarder/config/rsyslog.d
-wget https://raw.githubusercontent.com/jabenninghoff/rsyslog-forwarder/master/etc/rsyslog.d/10-input.conf
-wget https://raw.githubusercontent.com/jabenninghoff/rsyslog-forwarder/master/etc/rsyslog.d/50-parsers.conf
-wget https://raw.githubusercontent.com/jabenninghoff/rsyslog-forwarder/master/etc/rsyslog.d/90-output.conf
+wget https://raw.githubusercontent.com/jabenninghoff/rsyslog-forwarder/master/etc/rsyslog.d/rsyslog.conf
 ```
 
 Create a *docker-compose.yml* file:
