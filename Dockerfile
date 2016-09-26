@@ -1,5 +1,6 @@
 FROM alpine
 RUN apk add --no-cache rsyslog
+RUN apk add --no-cache tzdata
 
 COPY etc/ /etc/
 
