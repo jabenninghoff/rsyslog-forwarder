@@ -1,6 +1,9 @@
 FROM alpine
-RUN apk add --no-cache rsyslog
-RUN apk add --no-cache tzdata
+COPY packages/ /packages/
+COPY keys/ /etc/apk/keys/
+RUN echo "/packages" >> /etc/apk/repositories
+
+RUN apk add --no-cache rsyslog-tls rsyslog-normalize tzdata
 
 COPY etc/ /etc/
 
