@@ -1,5 +1,5 @@
 FROM alpine
-RUN apk add --no-cache rsyslog rsyslog-tls tzdata
+RUN apk add --no-cache rsyslog rsyslog-tls logrotate tzdata
 
 COPY etc/ /etc/
 
