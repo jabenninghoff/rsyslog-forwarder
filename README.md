@@ -11,9 +11,9 @@ Use `docker-compose` to standardize syslog messages using [syslog parsing](http:
 
 Copy the default files:
 ```
-mkdir /forwarder/config/rsyslog.d
-cd /forwarder/config/rsyslog.d
-wget https://raw.githubusercontent.com/jabenninghoff/rsyslog-forwarder/master/etc/rsyslog.d/rsyslog.conf
+mkdir /forwarder
+cd /forwarder
+wget https://raw.githubusercontent.com/jabenninghoff/rsyslog-forwarder/master/rsyslog.conf
 ```
 
 Create a *docker-compose.yml* file:
@@ -23,7 +23,7 @@ services:
   forwarder:
     image: "jbenninghoff/rsyslog-forwarder"
     volumes:
-      - /forwarder/config/rsyslog.d:/etc/rsyslog.d
+      - /forwarder/rsyslog.conf:/etc/rsyslog.conf
     ports:
       - "514/udp:514/udp"
       - "10514/tcp:10514/tcp"
