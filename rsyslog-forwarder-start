@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# launch crond for logrotate
+crond
+rsyslogd -n
