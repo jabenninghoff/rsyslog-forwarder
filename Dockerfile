@@ -7,4 +7,4 @@ COPY rsyslog-forwarder-start /usr/local/bin/
 VOLUME /var/run/rsyslog/dev
 EXPOSE 514 10514
 
-CMD ["rsyslog-forwarder-start"]
+CMD ["rsyslogd", "-n"]
