@@ -1,0 +1,9 @@
+sudo: required
+services:
+  - docker
+
+install:
+  - bash test/install.sh
+
+script:
+  - bash test/test.sh
