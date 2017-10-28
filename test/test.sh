@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -e # halt script on error
 
+# verify all 3 expected processes are running
 COUNT="3"
 FILTER="supervisord|crond|rsyslogd"
 
