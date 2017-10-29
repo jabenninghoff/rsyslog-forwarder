@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e # halt script on error
 
-CONTAINER="rsyslog-forwarder"
+. test/variables.sh
 
 # stop running docker and remove volume & image
 docker rm -vf $CONTAINER
