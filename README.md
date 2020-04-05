@@ -1,5 +1,5 @@
 # rsyslog-forwarder
-[![Build Status](https://travis-ci.org/jabenninghoff/rsyslog-forwarder.svg?branch=master)](https://travis-ci.org/jabenninghoff/rsyslog-forwarder)
+[![Build Status](https://travis-ci.com/jabenninghoff/rsyslog-forwarder.svg?branch=master)](https://travis-ci.com/jabenninghoff/rsyslog-forwarder)
 
 Simple rsyslog Docker image optimized for parsing and forwarding logs
 
