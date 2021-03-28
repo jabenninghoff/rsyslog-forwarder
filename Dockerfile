@@ -1,4 +1,4 @@
-FROM alpine:3.12
+FROM alpine
 RUN apk add --no-cache rsyslog rsyslog-tls logrotate supervisor tzdata
 
 COPY etc/ /etc/
