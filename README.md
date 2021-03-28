@@ -14,7 +14,7 @@ Copy the default files:
 ```
 mkdir ~/forwarder
 cd ~/forwarder
-wget https://raw.githubusercontent.com/jabenninghoff/rsyslog-forwarder/update-readme/etc/rsyslog.conf
+wget https://raw.githubusercontent.com/jabenninghoff/rsyslog-forwarder/master/etc/rsyslog.conf
 ```
 
 Create a *docker-compose.yml* file:
