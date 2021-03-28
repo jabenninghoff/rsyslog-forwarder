@@ -19,13 +19,13 @@ wget https://raw.githubusercontent.com/jabenninghoff/rsyslog-forwarder/master/rs
 
 Create a *docker-compose.yml* file:
 ```
-version: '2'
+version: '3'
 services:
   forwarder:
-    image: "jbenninghoff/rsyslog-forwarder"
+    image: jbenninghoff/rsyslog-forwarder
     volumes:
       - /forwarder/rsyslog.conf:/etc/rsyslog.conf
     ports:
-      - "514/udp:514/udp"
-      - "10514/tcp:10514/tcp"
+      - 514/udp:514/udp
+      - 10514/tcp:10514/tcp
 ```
